@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    int a1, a2, b1, b2;
+    float midA, midB;
+    scanf("%d", &a1);
+    scanf("%d", &b1);
+    scanf("%d", &a2);
+    scanf("%d", &b2);
+    midA = (a1 + a2) / 2.0;
+    midB = (b1 + b2) / 2.0;
+    printf("Binoy's house is located at (%.1f,%.1f)\n", midA, midB);
+    return 0;
+}
