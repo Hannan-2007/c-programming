@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+     char x[100];
+    int m1, m2, m3, m4, m5;
+    int y;
+    float z;
+    char grade;
+    scanf("%s", x);
+    scanf("%d",&m1);
+    scanf("%d",&m2);
+    scanf("%d",&m3);
+    scanf("%d",&m4);
+    scanf("%d",&m5);
+    y = m1 + m2 + m3 + m4 + m5;
+    z = y / 5.0;
+    if (z == 100)
+        grade = 'S';
+    else if (z >= 90)
+        grade = 'A';
+    else if (z >= 80)
+        grade = 'B';
+    else if (z >= 70)
+        grade = 'C';
+    else if (z >= 60)
+        grade = 'D';
+    else if (z >= 50)
+        grade = 'E';
+    else
+        grade = 'F'; 
+    printf("Name of the Student:%s\n", x);
+    printf("Total Mark:%d\n", y);
+    printf("Average Mark:%.1f\n", z);
+
+    if (grade == 'F')
+        printf("Grade Mark:Fail\n");
+    else
+        printf("Grade Mark:%c\n", grade);
+    return 0;
+}
