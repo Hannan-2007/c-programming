@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+   
+    int calculateSquare(int number) 
+    {
+    return number * number;
+}
+
+int main() {
+    int num;
+    scanf("%d", &num);
+    if (num >= 1 && num <= 9) {
+        int result = calculateSquare(num);
+        printf("Square of %d is %d\n", num, result);
+    } else 
+    {
+        printf("Invalid Input\n");
+    }
+
+    return 0;
+}
