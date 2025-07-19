@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    void print_natural_numbers(int current, int n)
+    {
+    if (current > n)
+        return;
+    printf("%d ", current);
+    print_natural_numbers(current + 1, n);
+    }
+    int main()
+    {
+    int num;
+    scanf("%d", &num);
+    if (num < 1 || num > 50) 
+    {
+        printf("Enter a Valid Input!!!!!!!!!!!!!!!!!!!!!!!!\n");
+    } else 
+    {
+        printf("The first %d Natural Numbers are:\n", num);
+        print_natural_numbers(1, num);
+    }
+
+    return 0;
+}
