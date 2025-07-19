@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int sum_of_digits(int n) 
+    {
+    if(n==0)
+    return 0;
+    return(n%10)+sum_of_digits(n/10);
+    }
+    int main() 
+    {
+    int num;
+    scanf("%d",&num);
+    if(num>=1000) 
+    {
+        printf("Enter a Valid Input!!!!!!!\n");
+    } else 
+    {
+        int result=sum_of_digits(num);
+        printf("Sum of Digit:%04d\n",result);
+    }
+    return 0;
+}
